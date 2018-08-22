@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.04)
 
-project (test)
-file(GLOB test_SRC
+project (sample)
+file(GLOB SOURCE
     "*.h"
     "*.cpp"
 )
-
-add_executable(test ${test_SRC})
+set(CMAKE_CXX_STANDARD 14)
+add_executable(sample ${SOURCE})
